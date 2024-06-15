@@ -3,7 +3,7 @@ const LitElement = customElements.get('home-assistant-main')
   : Object.getPrototypeOf(customElements.get('hui-view'));
 const html = LitElement.prototype.html;
 
-class PollenPrognosCard  extends LitElement {
+class DWDPollenPrognosCard  extends LitElement {
 
   setConfig(config) {
     if (!config.allergens) {
@@ -209,5 +209,5 @@ class PollenPrognosCard  extends LitElement {
   }
 }
 
-class HAPC extends PollenPrognosCard {} ;
-customElements.define('pollenprognos-card', PollenPrognosCard);
+class HAPC extends DWDPollenPrognosCard {} ;
+customElements.define('dwd-pollenprognos-card', DWDPollenPrognosCard);
