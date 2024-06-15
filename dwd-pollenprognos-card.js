@@ -171,7 +171,7 @@ class DWDPollenPrognosCard extends LitElement {
       this.img_path = "/local/pollen_img";
     }
 
-    const region = this.config.region.toLowerCase();
+    const region = this.config.region;
 
     const allergens = this.config.allergens;
     for (var i = 0; i < allergens.length; i++) {
