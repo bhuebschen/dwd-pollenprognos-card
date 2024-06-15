@@ -183,7 +183,7 @@ class DWDPollenPrognosCard extends LitElement {
 
       dict.allergens = allergen;
       dict.forecast =
-        hass.states[`sensor.pollenflug_${allergenReplaced}_${region}`];
+        hass.states[`sensor.pollenflug_${allergen}_${region}`];
       if (dict.forecast.state == "unknown") {
         if (dict.forecast === undefined) continue;
       }
