@@ -28,23 +28,22 @@ class DWDPollenPrognosCard extends LitElement {
   }
   _text(state) {
     switch (state) {
-      case -1:
-      case 0:
+      case "0":
         return "keine Belastung";
-      case 0.5:
+      case "0.5":
         return "keine bis geringe Belastung";
-      case 1:
+      case "1":
         return "geringe Belastung";
-      case 1.5:
+      case "1.5":
         return "geringe bis mittlere Belastung";
-      case 2:
+      case "2":
         return "mittlere Belastung";
-      case 2.5:
+      case "2.5":
         return "mittlere bis hohe Belastung";
-      case 3:
+      case "3":
         return "hohe Belastung hoch";
-      case 3.5:
-        return "Extrem";
+      case "3.5":
+        return "extrem Belastung";
       default:
         return state;
     }
