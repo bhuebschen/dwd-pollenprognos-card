@@ -43,7 +43,7 @@ class DWDPollenPrognosCard extends LitElement {
       case "3":
         return "hohe Belastung";
       case "3.5":
-        return "extrem Belastung";
+        return "extreme Belastung";
       default:
         return state;
     }
