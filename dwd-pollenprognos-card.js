@@ -41,7 +41,7 @@ class DWDPollenPrognosCard extends LitElement {
       case "2.5":
         return "mittlere bis hohe Belastung";
       case "3":
-        return "hohe Belastung hoch";
+        return "hohe Belastung";
       case "3.5":
         return "extrem Belastung";
       default:
