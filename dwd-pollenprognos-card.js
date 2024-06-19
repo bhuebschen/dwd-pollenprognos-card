@@ -91,6 +91,19 @@ class DWDPollenPrognosCard extends LitElement {
   }
 
   _renderMinimalStyle() {
+    let flexWidth = 20;
+    if (this.config.columns != null) {
+      flexWidth =
+        this.config.columns == 1
+          ? 50
+          : this.config.columns == 2
+          ? 30
+          : this.config.columns == 3
+          ? 25
+          : this.config.columns == 4
+          ? 20
+          : 10;
+    }
     return html` <style>
       ha-card {
         padding: 16px;
@@ -121,7 +134,7 @@ class DWDPollenPrognosCard extends LitElement {
       }
       .sensor {
         margin: 10px;
-        flex: 1 1 0;
+        flex: 1 1 ${flexWidth}%;
         flex-direction: column;
         justify-content: space-evenly;
         display: flex;
@@ -179,10 +192,8 @@ class DWDPollenPrognosCard extends LitElement {
         allergens[i].charAt(0).toUpperCase() + allergens[i].slice(1);
       var allergen = allergens[i].replace(" / ", "_").toLowerCase();
 
-
       dict.allergens = allergen;
-      dict.forecast =
-        hass.states[`sensor.pollenflug_${allergen}_${region}`];
+      dict.forecast = hass.states[`sensor.pollenflug_${allergen}_${region}`];
       if (dict.forecast.state == "unknown") {
         if (dict.forecast === undefined) continue;
       }
