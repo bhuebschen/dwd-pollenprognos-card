@@ -94,6 +94,7 @@ views:
 | type | string | **Required** | `custom:dwd-pollenprognos-card`
 | region | string | **Required** | dwd region from which you have sensors - can be found at the end of the created sensors by the dwd-pollenflug-integration
 | allergens | list | **Required** | List of allergens for which you have sensors
+| columns | number | **Optional** | Define the number of columns per row
 | title | boolean | **Optional** | Set to `false` to remove the heading from the card
 | show_state | boolean | **Optional** | Set to `false` if you don't want to show the state text under the images.
 | threshold | number | **Optional** | Set to a number if you don't want to show allergens below that number (set to `0` to only exclude unknown or i.u.).
