@@ -12,5 +12,8 @@
     "codeowners": [
         "@bhuebschen"
     ],
-    "version": "1.0.3"
+    "version": "1.0.3",
+    "file_include": [
+        "pollen_img/*"
+    ]
 }
