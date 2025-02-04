@@ -1,0 +1,17 @@
+{
+    "name": "dwd-pollenprognos-card",
+    "version": "1.0.3",
+    "description": "DWD Pollenprognose Card für Home Assistant",
+    "main": "dwd-pollenprognos-card.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bhuebschen/dwd-pollenprognos-card"
+    },
+    "author": "bhuebschen",
+    "license": "MIT",
+    "files": [
+        "dwd-pollenprognos-card.js",
+        "pollen_img"
+    ]
+}
