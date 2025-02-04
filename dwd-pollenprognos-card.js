@@ -180,7 +180,7 @@ class DWDPollenPrognosCard extends LitElement {
     if (this.config.img_path != null) {
       this.img_path = this.config.img_path;
     } else {
-      this.img_path = "/local/pollen_img";
+      this.img_path = "/hacsfiles/dwd-pollenprognos-card/pollen_img/";
     }
 
     const region = this.config.region;
@@ -219,5 +219,19 @@ class DWDPollenPrognosCard extends LitElement {
   }
 }
 
-class HAPC extends DWDPollenPrognosCard {}
 customElements.define("dwd-pollenprognos-card", DWDPollenPrognosCard);
+
+window.customCards = window.customCards || [];
+window.customCards.push({
+  type: "dwd-pollenprognos-card",
+  name: "DWD Pollenprognose",
+  description: "A custom card for displaying DWD pollen forecast data.",
+  preview: true,
+  documentationURL: "https://github.com/bhuebschen/dwd-pollenprognos-card",
+});
+
+console.info(
+  "%c  DWD-POLLENPROGNOS-CARD  \n%c     Version: 1.0.3       ",
+  "background: #2d4b9b; color: black; font-weight: bold; padding: 5px 0;",
+  "color: white; background: #333; font-weight: bold; padding: 5px 0;"
+);

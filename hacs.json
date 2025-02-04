@@ -1,5 +1,16 @@
 {
     "name": "DWD Pollenprognos Card",
+    "description": "A custom card for Home Assistant to display the pollen forecast from the German Weather Service (DWD).",
     "render_readme": true,
-    "filename": "dwd-pollenprognos-card.js"
+    "filename": "dwd-pollenprognos-card.js",
+    "resources": true,
+    "homeassistant": "2023.1.0",
+    "domains": [
+        "lovelace"
+    ],
+    "country": "DE",
+    "codeowners": [
+        "@bhuebschen"
+    ],
+    "version": "1.0.3"
 }
